@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Users</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+        integrity="sha512-wnea99uKIC3TJF7v4eKk4Y+lMz2Mklv18+r4na2Gn1abDRPPOeef95xTzdwGD9e6zXJBteMIhZ1+68QC5byJZw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="background">
+        <div class="content w-full mt-2">
+            <h1 class="text-center text-2xl mt-3 text-gray-400">Enter your github profile User Name</h1>
+            <div class="flex flex-col justify-content-center items-center p-4 mt-2">
+                <input id="user_name" type="text" placeholder="Ex: Rohit7826" class="border-2 rounded-xl p-2 
+                     text-gray-400 focus:outline-none" />
+                <button onclick="ajaxRequest()"
+                    class="mt-4 p-2 bg-blue-300 rounded-3xl text-gray-600 hover:text-red-400 font-bold">Find my
+                    Account</button>
+            </div>
+
+
+            <div class="w-full flex mt-2 " id="profile">
+
+            </div>
+        </div>
+    </div>
+</body>
+<script defer src="./js/script.js"></script>
+
+</html>
