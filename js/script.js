@@ -8,7 +8,7 @@ const ajaxRequest=()=>{
     const xhr =new XMLHttpRequest();
 
     xhr.open('GET', `https://api.github.com/users/${userName}`,true);
-    
+
     xhr.onload = function(){
         if(xhr.readyState == 4 || xhr.status == 200)
         {
@@ -62,9 +62,9 @@ function showData(xhr)
             <div class="flex flex-col items-center">
                 <img class="w-full xl:h-96 bg-cover"
                     src=${jsonData['avatar_url']}
-                    alt="Avatar">0
+                    alt="Avatar">
            </div>
-        </div>   
+        </div>
         `
     }
     else{
